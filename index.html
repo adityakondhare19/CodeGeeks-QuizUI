@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeGeeks</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="game-box">
+            <div class="header">
+                <h1>CodeGeeks</h1>
+                <div class="progress-wrapper">
+                    <div id="progress-bar"></div>
+                </div>
+                <p id="question-number">Question 1 of 10</p>
+            </div>
+
+            <h2 id="question">Loading question...</h2>
+
+            <div id="answer-buttons" class="options-grid">
+                </div>
+
+            <button id="next-btn" class="hidden">Next Question</button>
+        </div>
+
+        <div id="result-box" class="hidden">
+            <div class="trophy">🏆</div>
+            <h2>Quiz Finished!</h2>
+            <p>You scored <span id="score">0</span> out of <span id="total">0</span></p>
+            <button onclick="location.reload()" class="restart-btn">Try Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

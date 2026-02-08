@@ -1,0 +1,112 @@
+:root {
+    --primary: #6366f1;
+    --success: #10b981;
+    --error: #ef4444;
+    --bg: #0f172a;
+    --glass: rgba(255, 255, 255, 0.05);
+    --border: rgba(255, 255, 255, 0.1);
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top right, #1e1b4b, #0f172a);
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.quiz-container {
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 2.5rem;
+    width: 90%;
+    max-width: 550px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* Header & Progress */
+.header h1 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.progress-wrapper {
+    background: var(--border);
+    height: 8px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0%;
+    background: var(--primary);
+    border-radius: 10px;
+    transition: width 0.4s ease;
+}
+
+#question-number {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+h2 {
+    margin: 1.5rem 0;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* Buttons */
+.options-grid {
+    display: grid;
+    gap: 12px;
+}
+
+button {
+    all: unset;
+    background: var(--glass);
+    border: 1px solid var(--border);
+    padding: 15px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary);
+}
+
+/* Feedback Classes */
+.correct { background: var(--success) !important; color: white; }
+.wrong { background: var(--error) !important; animation: shake 0.3s; }
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+#next-btn, .restart-btn {
+    margin-top: 2rem;
+    background: var(--primary);
+    text-align: center;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.hidden { display: none; }
+
+#result-box { text-align: center; }
+.trophy { font-size: 4rem; margin-bottom: 1rem; }
