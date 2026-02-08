@@ -15,3 +15,6 @@ The application provides a clean and user-friendly interface where users can sta
 CodeGeeks is built using HTML, CSS, and JavaScript, making it lightweight, fast, and easy to run in any modern web browser without additional setup. JavaScript is used to handle core logic such as question loading, option selection, score calculation, and result display, while CSS ensures a visually appealing and responsive design across devices.
 
 The quiz content can be easily modified or extended by updating the question data, allowing developers or educators to adapt the app for different subjects or difficulty levels. Overall, CodeGeeks combines simplicity, interactivity, and learning effectiveness, making it an ideal mini-project for web development practice as well as a useful educational tool
+
+Output - 
+<img width="1740" height="1052" alt="Image" src="https://github.com/user-attachments/assets/f30502f8-0955-4c68-8d6d-585229e3f734" />
